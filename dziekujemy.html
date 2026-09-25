@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dziękujemy za zapytanie - Greenko × Bien Agencja</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    /* Konwersja odpala się tutaj (osobny URL). W GTM: generate_lead (GA4), Lead (Meta Pixel + CAPI, wspólny event_id), konwersja Google Ads. */
+    window.dataLayer = window.dataLayer || [];
+    (function () {
+      var t = new URLSearchParams(location.search).get('szkolenie') || '';
+      var id = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+      window.dataLayer.push({ event: 'generate_lead', training: t, event_id: id });
+    })();
+  </script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <div class="brands" aria-label="Greenko i Bien Agencja">
+      <span class="brand brand--greenko"><img src="assets/logo-greenko-trim.png" alt="Greenko" width="235" height="160"></span>
+      <span class="brands__x" aria-hidden="true">×</span>
+      <span class="brand brand--bien"><img src="assets/logo-bien-trim.png" alt="Bien Agencja" width="202" height="160"></span>
+    </div>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+48507732567" data-phone="header" aria-label="Zadzwoń do Greenko: 507 732 567"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="header-phone__label">507 732 567</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="thanks on-ink" aria-labelledby="thanks-title">
+    <div class="wrap">
+      <div class="thanks__inner">
+        <span class="thanks__badge" aria-hidden="true"><svg><use href="#i-check"/></svg></span>
+        <h1 id="thanks-title">Dziękujemy za zapytanie</h1>
+        <p class="thanks__lead">Mamy Twoje zgłoszenie. Wkrótce oddzwonimy, żeby ustalić szczegóły. Potwierdzenie wysłaliśmy też na Twój e-mail.</p>
+        <p class="thanks__course" data-course-line hidden><span class="chip">Wybrane szkolenie: <span data-course-name></span></span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--mist" aria-labelledby="next-title">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 id="next-title">Co dalej</h2>
+        <p>Trzy kroki od rozmowy do szkolenia.</p>
+      </div>
+      <ol class="grid grid--3 after-steps">
+        <li class="step"><span class="step__num" aria-hidden="true">1</span><h3>Rozmowa i diagnoza potrzeb</h3><p>Pytamy o cele, zespół i poziom wiedzy.</p><span class="role role--greenko">Greenko i Bien</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">2</span><h3>Propozycja programu i terminu</h3><p>Dostajesz program dopasowany do firmy.</p><span class="role role--bien">Bien Agencja</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">3</span><h3>Potwierdzenie i formalności</h3><p>Greenko przygotowuje umowę i sprawdza dofinansowanie.</p><span class="role role--greenko">Greenko</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="meet-title">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 id="meet-title">Tymczasem poznaj prowadzących</h2>
+      </div>
+      <div class="follow">
+        <a href="https://pl.linkedin.com/in/wojciech-biendzio" target="_blank" rel="noopener" data-cta="LinkedIn Wojciech" data-section="thanks">
+          <span class="li"><svg aria-hidden="true"><use href="#i-in"/></svg></span>
+          <span><b>Wojciech Biendzio</b><span>Właściciel Bien Agencja, prowadzący szkolenia</span></span>
+          <svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/bien-agencja/" target="_blank" rel="noopener" data-cta="LinkedIn Bien" data-section="thanks">
+          <span class="li"><svg aria-hidden="true"><use href="#i-in"/></svg></span>
+          <span><b>Bien Agencja</b><span>Profil firmy na LinkedIn</span></span>
+          <svg class="arr" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+      <p style="margin-top:28px"><a class="link" href="index.html">Wróć na stronę szkoleń</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__legal" style="margin-top:0;border-top:0;padding-top:0">
+      <p>© 2026 Greenko sp. z o.o. i Bien Agencja</p>
+      <nav aria-label="Dokumenty">
+        <a href="#">Polityka prywatności</a>
+        <a href="#">Klauzula informacyjna</a>
+        <a href="#">Regulamin</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var names = {
+      'metaads': 'Meta Ads (Facebook i Instagram)',
+      'ai-w-firmie': 'AI w firmie - dla menedżerów',
+      'ai-w-marketingu': 'AI w marketingu - teoria i praktyka',
+      'strategia-social-media': 'Strategia komunikacji w social mediach',
+      'linkedin': 'LinkedIn: marka osobista i profil firmowy',
+      'na-miare': 'Szkolenie na miarę'
+    };
+    var t = new URLSearchParams(location.search).get('szkolenie');
+    if (t && names[t]) {
+      document.querySelector('[data-course-name]').textContent = names[t];
+      document.querySelector('[data-course-line]').hidden = false;
+    }
+    document.addEventListener('click', function (ev) {
+      var a = ev.target.closest('[data-cta]');
+      if (a) window.dataLayer.push({ event: 'click_cta', cta_text: a.getAttribute('data-cta'), section: 'thanks' });
+      var tel = ev.target.closest('a[href^="tel:"]');
+      if (tel) window.dataLayer.push({ event: 'click_phone', location: tel.getAttribute('data-phone') || 'thanks' });
+    });
+  })();
+</script>
+</body>
+</html>
