@@ -747,3 +747,13 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .form-frame .form-card { padding-left: 18px; padding-right: 18px; }
   .form-frame .form__row--course { grid-template-columns: 1fr; }
 }
+
+/* Kafelek "Szkolenie na miarę": ten sam wzór "bien × greenko" co za formularzem */
+.course--custom { position: relative; isolation: isolate; overflow: hidden; }
+.course--custom::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  left: 50%; top: 50%; width: 300%; height: 300%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  background: url("hero-znak-kafel.webp") repeat 0 0 / 360px auto;
+  opacity: .07;
+}
