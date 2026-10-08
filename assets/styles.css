@@ -273,10 +273,15 @@ button, input, select, textarea { font: inherit; color: inherit; }
   .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
   .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .grid--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 }
 @media (min-width: 1024px) {
   .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .grid--5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 1280px) {
+  .grid--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
 }
 
 /* ---------- 02 Zaufali nam ---------- */
@@ -757,3 +762,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   background: url("hero-znak-kafel.webp") repeat 0 0 / 360px auto;
   opacity: .07;
 }
+
+/* 08.10: opiekunki Greenko bez zdjęć (inicjały do czasu dostarczenia zdjęć) */
+.contact__photo--ini { display: grid; place-items: center; background: var(--green-soft); color: var(--green-deep); font-weight: 900; font-size: var(--fs-md); letter-spacing: .02em; }
+.org__lead + .org__lead { margin-top: 12px; }
